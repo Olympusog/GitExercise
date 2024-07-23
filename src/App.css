@@ -1,0 +1,104 @@
+/* App.css (or inline in your App.js if preferred) */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+  margin-top: 40px; /* Spacing from the top */
+}
+
+.todo-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #343a40; /* Dark gray for header */
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1; /* Take remaining space */
+  height: 48px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-right: none; /* No right border for the input */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.todo-button {
+  height: 48px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  border: 1px solid #343a40; /* Dark gray border */
+  background-color: #343a40; /* Dark gray background */
+  color: #ffffff; /* White text */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.todo-button:hover {
+  background-color: #495057; /* Darker gray on hover */
+}
+
+.todo-list {
+  margin: 0 auto;
+  max-width: 500px; /* Limiting width for better readability */
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.todo-item-text {
+  flex: 1; /* Take remaining space */
+  font-size: 1.1rem;
+}
+
+.todo-item-buttons {
+  display: flex;
+}
+
+.todo-delete-button,
+.todo-edit-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: #343a40; /* Dark gray text */
+  border: 1px solid #343a40; /* Dark gray border */
+  background-color: #ffffff; /* White background */
+  cursor: pointer;
+}
+
+.todo-delete-button:hover,
+.todo-edit-button:hover {
+  background-color: #e9ecef; /* Light gray background on hover */
+}
+
+@media (max-width: 576px) {
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .todo-button {
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}
